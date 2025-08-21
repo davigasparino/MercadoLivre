@@ -115,7 +115,7 @@ product-api/
 │   └── app.ts
 ├── data/
 │   └── products.json
-├── Product-API.postman_collection.json  ← Collection do Postman
+├── postman-collection.json  ← Collection do Postman
 ├── package.json
 ├── tsconfig.json
 ├── .env.example
