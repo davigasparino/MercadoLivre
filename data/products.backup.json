@@ -1,0 +1,218 @@
+[
+  {
+    "id": "1fe13712-e709-4609-8939-369bfa57aade",
+    "name": "Produto Teste 3",
+    "description": "Outro Produto criado via API",
+    "price": 90.2,
+    "category": "Teste",
+    "stock": 54,
+    "isActive": true,
+    "tags": [],
+    "createdAt": "2025-08-21T13:09:14.475Z",
+    "updatedAt": "2025-08-21T13:09:14.475Z"
+  },
+  {
+    "id": "e8c8ab9a-c4b4-4043-8823-46cebb891f41",
+    "name": "Outro Produto Teste",
+    "description": "Outro Produto criado via API",
+    "price": 191.5,
+    "category": "Teste",
+    "stock": 44,
+    "isActive": true,
+    "tags": [],
+    "createdAt": "2025-08-20T17:21:54.693Z",
+    "updatedAt": "2025-08-20T17:21:54.693Z"
+  },
+  {
+    "id": "7e196efd-0194-427d-988f-2759ed94099c",
+    "name": "Meu Produto Teste",
+    "description": "Produto criado via API",
+    "price": 199.99,
+    "category": "Teste",
+    "stock": 10,
+    "isActive": true,
+    "tags": [],
+    "createdAt": "2025-08-20T17:20:20.929Z",
+    "updatedAt": "2025-08-20T17:20:20.929Z"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440010",
+    "name": "Sony WH-1000XM5",
+    "description": "Fones de ouvido over-ear com cancelamento de ruído premium",
+    "price": 1699.99,
+    "category": "Eletrônicos",
+    "stock": 30,
+    "imageUrl": "https://example.com/sonywh1000xm5.jpg",
+    "tags": [
+      "fones",
+      "sony",
+      "noise-cancelling",
+      "bluetooth"
+    ],
+    "isActive": true,
+    "createdAt": "2024-01-15T19:00:00.000Z",
+    "updatedAt": "2024-01-15T19:00:00.000Z"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440009",
+    "name": "Dell XPS 13",
+    "description": "Ultrabook premium com processador Intel de 13ª geração",
+    "price": 6999.99,
+    "category": "Eletrônicos",
+    "stock": 7,
+    "imageUrl": "https://example.com/dellxps13.jpg",
+    "tags": [
+      "notebook",
+      "dell",
+      "ultrabook",
+      "intel"
+    ],
+    "isActive": true,
+    "createdAt": "2024-01-15T18:00:00.000Z",
+    "updatedAt": "2024-01-15T18:00:00.000Z"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440008",
+    "name": "Apple Watch Series 9",
+    "description": "Smartwatch com GPS, monitoramento de saúde e Siri",
+    "price": 2799.99,
+    "category": "Wearables",
+    "stock": 22,
+    "imageUrl": "https://example.com/applewatch9.jpg",
+    "tags": [
+      "smartwatch",
+      "apple",
+      "saúde",
+      "fitness"
+    ],
+    "isActive": true,
+    "createdAt": "2024-01-15T17:00:00.000Z",
+    "updatedAt": "2024-01-15T17:00:00.000Z"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440007",
+    "name": "iPad Pro 12.9\"",
+    "description": "Tablet profissional com chip M2 e tela Liquid Retina XDR",
+    "price": 8999.99,
+    "category": "Eletrônicos",
+    "stock": 10,
+    "imageUrl": "https://example.com/ipadpro129.jpg",
+    "tags": [
+      "tablet",
+      "apple",
+      "profissional",
+      "m2"
+    ],
+    "isActive": true,
+    "createdAt": "2024-01-15T16:00:00.000Z",
+    "updatedAt": "2024-01-15T16:00:00.000Z"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440006",
+    "name": "Nintendo Switch OLED",
+    "description": "Console portátil com tela OLED de 7 polegadas",
+    "price": 2199.99,
+    "category": "Games",
+    "stock": 18,
+    "imageUrl": "https://example.com/switcholed.jpg",
+    "tags": [
+      "console",
+      "nintendo",
+      "portátil",
+      "oled"
+    ],
+    "isActive": true,
+    "createdAt": "2024-01-15T15:00:00.000Z",
+    "updatedAt": "2024-01-15T15:00:00.000Z"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440005",
+    "name": "Samsung Galaxy S24 Ultra",
+    "description": "Smartphone Android premium com S Pen e câmera de 200MP",
+    "price": 7299.99,
+    "category": "Eletrônicos",
+    "stock": 12,
+    "imageUrl": "https://example.com/galaxys24ultra.jpg",
+    "tags": [
+      "smartphone",
+      "samsung",
+      "android",
+      "s-pen"
+    ],
+    "isActive": true,
+    "createdAt": "2024-01-15T14:00:00.000Z",
+    "updatedAt": "2024-01-15T14:00:00.000Z"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440004",
+    "name": "AirPods Pro 2",
+    "description": "Fones de ouvido sem fio com cancelamento ativo de ruído",
+    "price": 1899.99,
+    "category": "Eletrônicos",
+    "stock": 25,
+    "imageUrl": "https://example.com/airpodspro2.jpg",
+    "tags": [
+      "fones",
+      "bluetooth",
+      "apple",
+      "noise-cancelling"
+    ],
+    "isActive": true,
+    "createdAt": "2024-01-15T13:00:00.000Z",
+    "updatedAt": "2024-01-15T13:00:00.000Z"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440003",
+    "name": "PlayStation 5",
+    "description": "Console de nova geração com tecnologia ray tracing e SSD ultra-rápido",
+    "price": 3999.99,
+    "category": "Games",
+    "stock": 5,
+    "imageUrl": "https://example.com/ps5.jpg",
+    "tags": [
+      "console",
+      "games",
+      "playstation",
+      "sony"
+    ],
+    "isActive": true,
+    "createdAt": "2024-01-15T12:00:00.000Z",
+    "updatedAt": "2024-01-15T12:00:00.000Z"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440002",
+    "name": "MacBook Pro 16\"",
+    "description": "Notebook profissional com chip M3 Max e tela Liquid Retina XDR",
+    "price": 12999.99,
+    "category": "Eletrônicos",
+    "stock": 8,
+    "imageUrl": "https://example.com/macbookpro16.jpg",
+    "tags": [
+      "notebook",
+      "apple",
+      "profissional",
+      "m3"
+    ],
+    "isActive": true,
+    "createdAt": "2024-01-15T11:00:00.000Z",
+    "updatedAt": "2024-01-15T11:00:00.000Z"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440001",
+    "name": "iPhone 15 Pro",
+    "description": "O mais avançado iPhone com chip A17 Pro e câmera profissional",
+    "price": 7999.99,
+    "category": "Eletrônicos",
+    "stock": 20,
+    "imageUrl": "https://example.com/iphone15pro.jpg",
+    "tags": [
+      "smartphone",
+      "apple",
+      "5g",
+      "premium"
+    ],
+    "isActive": true,
+    "createdAt": "2024-01-15T10:30:00.000Z",
+    "updatedAt": "2025-08-21T13:19:37.909Z"
+  }
+]

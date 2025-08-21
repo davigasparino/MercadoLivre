@@ -1,0 +1,418 @@
+{
+  "info": {
+    "name": "Product API - Professional Collection",
+    "description": "API moderna para gerenciamento de produtos com TypeScript e Express",
+    "version": "1.0.0",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000",
+      "type": "string"
+    },
+    {
+      "key": "apiVersion",
+      "value": "v1",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Health & Info",
+      "item": [
+        {
+          "name": "Health Check",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/health",
+              "host": ["{{baseUrl}}"],
+              "path": ["health"]
+            },
+            "description": "Verifica se a API está funcionando corretamente"
+          },
+          "response": []
+        },
+        {
+          "name": "API Info",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/",
+              "host": ["{{baseUrl}}"],
+              "path": [""]
+            },
+            "description": "Retorna informações gerais da API"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Products - CRUD",
+      "item": [
+        {
+          "name": "Listar Produtos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/{{apiVersion}}/products?page=1&limit=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "{{apiVersion}}", "products"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1",
+                  "description": "Página (padrão: 1)"
+                },
+                {
+                  "key": "limit",
+                  "value": "10",
+                  "description": "Itens por página (máx: 100)"
+                },
+                {
+                  "key": "category",
+                  "value": "",
+                  "description": "Filtrar por categoria",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "",
+                  "description": "Buscar em nome, descrição e tags",
+                  "disabled": true
+                },
+                {
+                  "key": "sortBy",
+                  "value": "createdAt",
+                  "description": "Ordenar por: name, price, createdAt",
+                  "disabled": true
+                },
+                {
+                  "key": "sortOrder",
+                  "value": "desc",
+                  "description": "Ordem: asc, desc",
+                  "disabled": true
+                },
+                {
+                  "key": "isActive",
+                  "value": "",
+                  "description": "Filtrar por status ativo",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Lista produtos com filtros, ordenação e paginação"
+          },
+          "response": []
+        },
+        {
+          "name": "Obter Produto por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/{{apiVersion}}/products/550e8400-e29b-41d4-a716-446655440001",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "{{apiVersion}}", "products", "550e8400-e29b-41d4-a716-446655440001"]
+            },
+            "description": "Obtém um produto específico pelo ID (UUID)"
+          },
+          "response": []
+        },
+        {
+          "name": "Criar Produto",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Produto Criado via Postman\",\n  \"description\": \"Este produto foi criado usando o Postman para testar a API\",\n  \"price\": 299.99,\n  \"category\": \"Eletrônicos\",\n  \"stock\": 25,\n  \"imageUrl\": \"https://example.com/produto.jpg\",\n  \"tags\": [\"teste\", \"postman\", \"api\"],\n  \"isActive\": true\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/{{apiVersion}}/products",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "{{apiVersion}}", "products"]
+            },
+            "description": "Cria um novo produto"
+          },
+          "response": []
+        },
+        {
+          "name": "Atualizar Produto",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Produto Atualizado\",\n  \"description\": \"Descrição atualizada via Postman\",\n  \"price\": 399.99,\n  \"stock\": 15\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/{{apiVersion}}/products/550e8400-e29b-41d4-a716-446655440001",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "{{apiVersion}}", "products", "550e8400-e29b-41d4-a716-446655440001"]
+            },
+            "description": "Atualiza um produto existente (substitua o ID pelo de um produto existente)"
+          },
+          "response": []
+        },
+        {
+          "name": "Deletar Produto",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/{{apiVersion}}/products/550e8400-e29b-41d4-a716-446655440001",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "{{apiVersion}}", "products", "550e8400-e29b-41d4-a716-446655440001"]
+            },
+            "description": "Remove um produto (substitua o ID pelo de um produto existente)"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Products - Busca e Filtros",
+      "item": [
+        {
+          "name": "Buscar por Categoria",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/{{apiVersion}}/products?category=Eletrônicos&sortBy=price&sortOrder=asc",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "{{apiVersion}}", "products"],
+              "query": [
+                {
+                  "key": "category",
+                  "value": "Eletrônicos"
+                },
+                {
+                  "key": "sortBy",
+                  "value": "price"
+                },
+                {
+                  "key": "sortOrder",
+                  "value": "asc"
+                }
+              ]
+            },
+            "description": "Busca produtos por categoria ordenados por preço"
+          },
+          "response": []
+        },
+        {
+          "name": "Busca Avançada",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/{{apiVersion}}/products/search?search=iPhone&page=1&limit=5",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "{{apiVersion}}", "products", "search"],
+              "query": [
+                {
+                  "key": "search",
+                  "value": "iPhone"
+                },
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "limit",
+                  "value": "5"
+                }
+              ]
+            },
+            "description": "Busca produtos por termo (nome, descrição, tags)"
+          },
+          "response": []
+        },
+        {
+          "name": "Produtos por Categoria Específica",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/{{apiVersion}}/products/category/Games",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "{{apiVersion}}", "products", "category", "Games"]
+            },
+            "description": "Obtém todos os produtos de uma categoria específica"
+          },
+          "response": []
+        },
+        {
+          "name": "Produtos com Paginação",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/{{apiVersion}}/products?page=2&limit=3&sortBy=name&sortOrder=asc",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "{{apiVersion}}", "products"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "2"
+                },
+                {
+                  "key": "limit",
+                  "value": "3"
+                },
+                {
+                  "key": "sortBy",
+                  "value": "name"
+                },
+                {
+                  "key": "sortOrder",
+                  "value": "asc"
+                }
+              ]
+            },
+            "description": "Demonstra paginação com ordenação por nome"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Products - Operações Especiais",
+      "item": [
+        {
+          "name": "Estatísticas dos Produtos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/{{apiVersion}}/products/statistics",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "{{apiVersion}}", "products", "statistics"]
+            },
+            "description": "Obtém estatísticas gerais dos produtos (total, categorias, preço médio, etc.)"
+          },
+          "response": []
+        },
+        {
+          "name": "Adicionar Estoque",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"quantity\": 5,\n  \"operation\": \"add\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/{{apiVersion}}/products/550e8400-e29b-41d4-a716-446655440001/stock",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "{{apiVersion}}", "products", "550e8400-e29b-41d4-a716-446655440001", "stock"]
+            },
+            "description": "Adiciona unidades ao estoque de um produto"
+          },
+          "response": []
+        },
+        {
+          "name": "Subtrair Estoque",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"quantity\": 2,\n  \"operation\": \"subtract\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/{{apiVersion}}/products/550e8400-e29b-41d4-a716-446655440001/stock",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "{{apiVersion}}", "products", "550e8400-e29b-41d4-a716-446655440001", "stock"]
+            },
+            "description": "Remove unidades do estoque de um produto"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Testes de Validação",
+      "item": [
+        {
+          "name": "Criar Produto - Dados Inválidos",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"\",\n  \"description\": \"\",\n  \"price\": -10,\n  \"category\": \"\",\n  \"stock\": -5\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/{{apiVersion}}/products",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "{{apiVersion}}", "products"]
+            },
+            "description": "Testa validação com dados inválidos (deve retornar erro 422)"
+          },
+          "response": []
+        },
+        {
+          "name": "Obter Produto - ID Inválido",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/{{apiVersion}}/products/id-invalido",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "{{apiVersion}}", "products", "id-invalido"]
+            },
+            "description": "Testa validação de UUID (deve retornar erro 400)"
+          },
+          "response": []
+        },
+        {
+          "name": "Produto Não Encontrado",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/{{apiVersion}}/products/550e8400-e29b-41d4-a716-999999999999",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "{{apiVersion}}", "products", "550e8400-e29b-41d4-a716-999999999999"]
+            },
+            "description": "Testa produto inexistente (deve retornar erro 404)"
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
