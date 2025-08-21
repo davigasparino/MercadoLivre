@@ -187,7 +187,7 @@ npm run format        # Formatar código com Prettier
 1. Abra o Postman
 2. Clique em **"Import"** (canto superior esquerdo)
 3. Selecione **"Upload Files"**
-4. Navegue até a pasta do projeto e selecione: `Product-API.postman_collection.json`
+4. Navegue até a pasta do projeto e selecione: `postman-collection.json`
 5. Clique em **"Import"**
 
 ### 2. **Configurar Environment (Opcional)**
@@ -755,7 +755,7 @@ curl https://seudominio.com/health
 
 - **Documentação**: Este README
 - **Issues**: Use o sistema de issues do repositório
-- **API Collection**: Importe `Product-API.postman_collection.json` no Postman
+- **API Collection**: Importe `postman-collection.json` no Postman
 
 ## 📄 Licença
 
