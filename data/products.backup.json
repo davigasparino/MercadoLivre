@@ -1,5 +1,89 @@
 [
   {
+    "id": "d3ed45f9-d2b6-4010-8a8b-1e4d5fa8973d",
+    "name": "Produto Teste Único 1755787577805-0.686386054091678",
+    "description": "Descrição do produto teste criado pelo Jest",
+    "price": 199.99,
+    "category": "Teste",
+    "stock": 15,
+    "isActive": true,
+    "tags": [],
+    "createdAt": "2025-08-21T14:46:17.815Z",
+    "updatedAt": "2025-08-21T14:46:17.815Z"
+  },
+  {
+    "id": "40b142a9-f0c4-4525-8826-d0b5afeb8304",
+    "name": "Produto Teste Único 1755787464944-0.9532938960662518",
+    "description": "Descrição do produto teste criado pelo Jest",
+    "price": 199.99,
+    "category": "Teste",
+    "stock": 15,
+    "isActive": true,
+    "tags": [],
+    "createdAt": "2025-08-21T14:44:24.954Z",
+    "updatedAt": "2025-08-21T14:44:24.954Z"
+  },
+  {
+    "id": "02ebbc17-36b8-4d2c-9b52-4712aae9696d",
+    "name": "Produto Teste Único 1755787353250-0.14050337850587824",
+    "description": "Descrição do produto teste criado pelo Jest",
+    "price": 199.99,
+    "category": "Teste",
+    "stock": 15,
+    "isActive": true,
+    "tags": [],
+    "createdAt": "2025-08-21T14:42:33.260Z",
+    "updatedAt": "2025-08-21T14:42:33.260Z"
+  },
+  {
+    "id": "cf201fd4-bdc8-4490-9409-deb3b14c5f75",
+    "name": "Produto Teste Único 1755787344112-0.6306729837089284",
+    "description": "Descrição do produto teste criado pelo Jest",
+    "price": 199.99,
+    "category": "Teste",
+    "stock": 15,
+    "isActive": true,
+    "tags": [],
+    "createdAt": "2025-08-21T14:42:24.122Z",
+    "updatedAt": "2025-08-21T14:42:24.122Z"
+  },
+  {
+    "id": "70f7fa69-c8e7-4275-b1ce-82a5c757d30f",
+    "name": "Produto Teste Único 1755787323200-0.7680462482157056",
+    "description": "Descrição do produto teste criado pelo Jest",
+    "price": 199.99,
+    "category": "Teste",
+    "stock": 15,
+    "isActive": true,
+    "tags": [],
+    "createdAt": "2025-08-21T14:42:03.210Z",
+    "updatedAt": "2025-08-21T14:42:03.210Z"
+  },
+  {
+    "id": "51ef3bf9-aa6b-4d06-a7b3-4609c5b3c74c",
+    "name": "Produto Teste Único 1755787186178-0.4747402546684676",
+    "description": "Descrição do produto teste criado pelo Jest",
+    "price": 199.99,
+    "category": "Teste",
+    "stock": 15,
+    "isActive": true,
+    "tags": [],
+    "createdAt": "2025-08-21T14:39:46.188Z",
+    "updatedAt": "2025-08-21T14:39:46.188Z"
+  },
+  {
+    "id": "e43e92a9-db59-498f-9680-4d126f71dc1e",
+    "name": "Produto Teste Jest",
+    "description": "Descrição do produto teste criado pelo Jest",
+    "price": 199.99,
+    "category": "Teste",
+    "stock": 15,
+    "isActive": true,
+    "tags": [],
+    "createdAt": "2025-08-21T14:26:43.979Z",
+    "updatedAt": "2025-08-21T14:26:43.979Z"
+  },
+  {
     "id": "1fe13712-e709-4609-8939-369bfa57aade",
     "name": "Produto Teste 3",
     "description": "Outro Produto criado via API",
@@ -203,7 +287,7 @@
     "description": "O mais avançado iPhone com chip A17 Pro e câmera profissional",
     "price": 7999.99,
     "category": "Eletrônicos",
-    "stock": 20,
+    "stock": 18,
     "imageUrl": "https://example.com/iphone15pro.jpg",
     "tags": [
       "smartphone",
@@ -213,6 +297,18 @@
     ],
     "isActive": true,
     "createdAt": "2024-01-15T10:30:00.000Z",
-    "updatedAt": "2025-08-21T13:19:37.909Z"
+    "updatedAt": "2025-08-21T13:19:49.785Z"
+  },
+  {
+    "id": "285d10d2-92e8-4ae0-8206-50e6cff4d12e",
+    "name": "Produto Teste Único 1755787617904-0.17507776278589482",
+    "description": "Descrição do produto teste criado pelo Jest",
+    "price": 199.99,
+    "category": "Teste",
+    "stock": 15,
+    "isActive": true,
+    "tags": [],
+    "createdAt": "2025-08-21T14:46:57.914Z",
+    "updatedAt": "2025-08-21T14:46:57.914Z"
   }
 ]

@@ -65,7 +65,7 @@ git --version     # Qualquer versão recente
 
 ### 1. **Clone o Repositório**
 ```bash
-git clone <url-do-repositorio>
+git clone https://github.com/davigasparino/MercadoLivre.git
 cd product-api
 ```
 
